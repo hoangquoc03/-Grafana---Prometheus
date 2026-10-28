@@ -42,3 +42,4 @@ Dữ liệu được lưu trong hai named volume `grafana-data` và `prometheus-
 - [Bài 3: Xử lý cảnh báo giả](docs/bai-3-xu-ly-canh-bao-gia.md). Rule `HighCPUUsage` dùng ngưỡng `85%` và thời gian duy trì `5m`; kiểm tra `/rules` và `/alerts` để xem trạng thái runtime.
 - [Bài 4: Prometheus file service discovery](docs/bai-4-file-service-discovery.md). Job `microservices` đọc target từ `prometheus/targets.json`; sau khi chỉnh `prometheus.yml` cần áp dụng cấu hình Prometheus, còn cập nhật JSON được dò theo chu kỳ 30 giây.
 - [Bài 5: Debug Spring Boot metrics](docs/bai-5-debug-spring-boot-metrics.md). Job `backend-app` dùng path `/actuator/prometheus`; workspace hiện chưa có mã nguồn Spring Boot nên cần thêm/chỉ định ứng dụng để xác minh endpoint thực tế.
+- [Bài 6: Tích hợp giám sát vào CI/CD](docs/bai-6-tich-hop-giam-sat-vao-ci-cd.md). Jenkins chạy `promtool check config` trước stage Deploy; validation thất bại sẽ dừng pipeline.
