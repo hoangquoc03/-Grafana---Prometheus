@@ -35,4 +35,7 @@ docker compose restart grafana
 
 Dữ liệu được lưu trong hai named volume `grafana-data` và `prometheus-data`, tồn tại qua việc tạo lại container. Không dùng `docker compose down -v` nếu muốn giữ dữ liệu.
 
-Xem [tài liệu Bài 1](docs/bai-1-khac-phuc-ket-noi.md) để biết tình huống lỗi, quy trình xác minh và cách đọc lỗi kết nối.
+## Bài tập
+
+- [Bài 1: Khắc phục kết nối Grafana – Prometheus](docs/bai-1-khac-phuc-ket-noi.md).
+- [Bài 2: Tối ưu hóa chu kỳ scrape](docs/bai-2-toi-uu-scrape-interval.md). Chu kỳ scrape và evaluation được đặt `15s`; job `backend-app` chỉ hoạt động khi có service `backend` lắng nghe ở cổng `8080`.
