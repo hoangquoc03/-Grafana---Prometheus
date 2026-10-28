@@ -12,6 +12,7 @@ scrape_configs:
           - prometheus:9090
 
   - job_name: backend-app
+    metrics_path: /actuator/prometheus
     static_configs:
       - targets:
           - backend:8080
