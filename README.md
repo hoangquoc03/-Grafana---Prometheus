@@ -40,3 +40,4 @@ Dữ liệu được lưu trong hai named volume `grafana-data` và `prometheus-
 - [Bài 1: Khắc phục kết nối Grafana – Prometheus](docs/bai-1-khac-phuc-ket-noi.md).
 - [Bài 2: Tối ưu hóa chu kỳ scrape](docs/bai-2-toi-uu-scrape-interval.md). Chu kỳ scrape và evaluation được đặt `15s`; job `backend-app` chỉ hoạt động khi có service `backend` lắng nghe ở cổng `8080`.
 - [Bài 3: Xử lý cảnh báo giả](docs/bai-3-xu-ly-canh-bao-gia.md). Rule `HighCPUUsage` dùng ngưỡng `85%` và thời gian duy trì `5m`; kiểm tra `/rules` và `/alerts` để xem trạng thái runtime.
+- [Bài 4: Prometheus file service discovery](docs/bai-4-file-service-discovery.md). Job `microservices` đọc target từ `prometheus/targets.json`; sau khi chỉnh `prometheus.yml` cần áp dụng cấu hình Prometheus, còn cập nhật JSON được dò theo chu kỳ 30 giây.

@@ -15,3 +15,9 @@ scrape_configs:
     static_configs:
       - targets:
           - backend:8080
+
+  - job_name: microservices
+    file_sd_configs:
+      - files:
+          - /etc/prometheus/targets.json
+        refresh_interval: 30s
