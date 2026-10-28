@@ -1,0 +1,9 @@
+apiVersion: 1
+
+datasources:
+  - name: Prometheus
+    type: prometheus
+    # Docker Compose resolves the service name on the shared network; container IPs can change.
+    url: http://prometheus:9090
+    access: proxy
+    isDefault: true
